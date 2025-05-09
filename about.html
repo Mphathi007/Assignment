@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - CarHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body class="about-page">
+
+
+    <header>
+        <h1>About CarHub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <section class="our-story">
+                <h2>Our Story – Driven by Trust</h2>
+                <p>
+                    Ndadi Motors began in a small garage with just two cars and one big dream: to redefine how people experience buying a vehicle. 
+                    Our founder, once a mechanic with a passion for helping people, believed that car shopping should be honest, affordable, and stress-free.
+                </p>
+                <p>
+                    With that simple vision, we built Ndadi Motors on three core values: trust, service, and transparency. 
+                    Over the years, we've grown not just in size, but in relationships—with thousands of happy drivers now part of our extended family.
+                </p>
+                <p>
+                    What sets us apart isn’t just the cars we sell, but the care we put into every handshake, every test drive, and every call after the sale. 
+                    Because to us, it's not just about getting you on the road—it's about driving forward together.
+                </p>
+            </section>
+            
+          
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ndadi Motors. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('aboutForm');
+        const nameInput = document.getElementById('dealershipName');
+        const descInput = document.getElementById('description');
+        const displayName = document.getElementById('displayName');
+        const displayDesc = document.getElementById('displayDescription');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            displayName.textContent = nameInput.value;
+            displayDesc.textContent = descInput.value;
+            form.reset();
+        });
+    </script>
+</body>
+</html>
